@@ -1,17 +1,19 @@
 <template>
-  <main class="container mx-auto my-8 space-y-8">
-    <h1 class="text-4xl font-medium">Event Booking App</h1> 
-    <h2 class="text-2xl font-medium">All Events</h2>
-    <section class="grid grid-cols-2 gap-8">
-      <EventCard  v-for="i in 6" :key="i" 
-      title="Vue Conference 2024" when="21-09-2024" description="Conference about Vue and JavaScript" 
-      @register="console.log('Registered!')"/>
-    </section>
-    <h2 class="text-2xl font-medium">Your Bookings</h2>
-  </main>
+  <RoundedCard>
+    <h3 v-if="$slots.header" class="p-4 font-medium text-xl border-b border-gray-200">
+      <slot name="header"></slot>
+    </h3>
+
+    <div v-if="$slots.default" :class="{'p-4': true, 'border-b border-gray-200': $slots.footer}">
+      <slot></slot>
+    </div>
+
+    <div v-if="$slots.footer" class="p-4">
+      <slot name="footer"></slot>
+    </div>
+  </RoundedCard>
 </template>
 
-
 <script setup>
-import EventCard from '@/components/EventCard.vue';
+import RoundedCard from "@/components/RoundedCard.vue";
 </script>
