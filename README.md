@@ -1,35 +1,9 @@
-# event-booking
+# Event Registration
 
-This template should help get you started developing with Vue 3 in Vite.
+Este projeto é uma aplicação de **registro de eventos** desenvolvida com **Vue.js**. O objetivo do sistema é permitir que os usuários visualizem eventos e façam reservas para participar deles.
 
-## Recommended IDE Setup
+## Funcionalidades
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- **Visualização de Eventos:** Exibe informações sobre os eventos disponíveis.
+- **Reserva de Eventos:** Permite que o usuário faça uma reserva para um evento.
+- **Interface Responsiva:** A interface foi projetada para ser amigável e adaptável a diferentes tamanhos de tela.
